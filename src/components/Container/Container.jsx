@@ -1,8 +1,8 @@
 import style from './Container.module.css'
 import classNames from 'classnames'
 
-export const Container = (props) => (
-		<div className={classNames(style.container, props.className)}>
-			{props.children}
+export const Container = ({children, className}) => (
+		<div className={classNames(style.container, className)}>
+			{children}
 		</div>
 	)
